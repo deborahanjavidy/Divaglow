@@ -1,0 +1,339 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to right, #ed7dd3, #feb47b);
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond de la nav */
+}
+
+.topnav {
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Aligne les éléments verticalement */
+    padding: 10px 20px; /* Espacement autour de la nav */
+}
+
+.topnav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utilise Flexbox pour les éléments de la liste */
+    align-items: center; /* Aligne les éléments verticalement */
+}
+
+.topnav ul li {
+    margin: 0 40px; /* Espace à droite et à gauche des éléments de la liste */
+}
+
+/* Logo Styles */
+#logo {
+    width: 150px; /* Taille fixe du logo */
+    height: 150px; /* Hauteur fixe pour garder les proportions */
+}
+
+/* Search Container */
+.search-container {
+    margin-left: 240px; /* Positionne le conteneur de recherche */
+    position: relative;
+    display: inline-block;
+}
+
+.search-bar {
+    padding: 8px 40px 8px 15px; /* Espace pour l'icône de recherche */
+    width: 250px; /* Largeur par défaut de la barre de recherche */
+    transition: width 0.4s ease-in-out; /* Transition lors du focus */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar:focus {
+    width: 300px; /* Largeur lors du focus */
+    outline: none; /* Enlève le contour par défaut */
+}
+
+.search-button {
+    position: absolute;
+    right: 10px; /* Positionne le bouton à l'intérieur du champ */
+    top: 50%;
+    transform: translateY(-50%); /* Centre le bouton verticalement */
+    background: none; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur pointer */
+    color: #333; /* Couleur de l'icône */
+    font-size: 16px; /* Taille de la police */
+}
+
+.sidenav {
+    height: auto;
+    width: 250px;
+    position: fixed;
+    top: 174px;
+    right: 0;
+    background-color:  rgba(0, 0, 0, 0.7); /* Augmenter l'opacité pour un fond plus solide */
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 10; /* Assurer que le sidenav est au-dessus */
+}
+
+.sidenav a {
+    padding: 6px 5px 2px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
+    text-decoration: none;
+    display: flex; /* Utilisation de flex pour centrer l'icône et le texte */
+    color: white; /* Couleur du texte par défaut */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+}
+
+.sidenav a:hover {
+    color: transparent; /* Rendre le texte transparent */
+    background: linear-gradient(to right, #ed7dd3, #feb47b); /* Dégradé au survol */
+    -webkit-background-clip: text; /* Clip de fond pour le texte */
+}
+
+.sidenav li {
+    list-style: none;
+    display: inline-block; /* Affichage en ligne */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+/* User Dropdown Styles */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.user-button {
+    background: none; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    color: white; /* Couleur du texte */
+    cursor: pointer; /* Curseur pointer */
+    font-size: 16px; /* Taille de la police */
+}
+
+.dropdown-content {
+    display: none; /* Masqué par défaut */
+    position: absolute;
+    background-color: #f9f9f9; /* Couleur de fond du menu */
+    min-width: 160px; /* Largeur minimale du menu */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Ombre */
+    z-index: 1; /* Au-dessus des autres éléments */
+}
+
+.dropdown-content a {
+    color: black; /* Couleur du texte */
+    padding: 12px 16px; /* Espacement interne */
+    text-decoration: none; /* Pas de soulignement */
+    display: block; /* Bloc pour remplir l'espace */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Couleur au survol */
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block; /* Affiche le menu au survol */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 30px; /* Ajuste la taille selon tes besoins */
+    margin: 0 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    animation: backgroundAnimation 15s infinite alternate;
+}
+
+
+/* Animation Styles */
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.3s;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.6s;
+    color: #666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-image {
+    max-width: 80%;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1s forwards;
+    animation-delay: 0.9s;
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.client-satisfaction {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Enroule les éléments si nécessaire pour responsivité */
+    gap: 50px;
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.2s;
+}
+
+.satisfaction-item {
+    flex: 1 1 300px; /* Ajuste chaque élément pour qu’il prenne le même espace */
+    max-width: 300px; /* Largeur maximale */
+    text-align: center;
+}
+
+.satisfaction-image {
+    width: 100%; /* Assure que l'image occupe tout l'espace de l'élément */
+    height: auto; /* Préserve le ratio d'aspect */
+    margin-bottom: 10px;
+    border-radius: 15px; /* Coins arrondis */
+}
+
+
+.satisfaction-item:nth-child(1) {
+    animation-delay: 1.4s;
+}
+.satisfaction-item:nth-child(2) {
+    animation-delay: 1.6s;
+}
+.satisfaction-item:nth-child(3) {
+    animation-delay: 1.8s;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    margin-top: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.info-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .topnav ul li {
+        margin: 8px 0; /* Espace vertical entre les éléments */
+    }
+
+    /* Styles pour le logo */
+    #logo {
+        width: 150px; /* Taille fixe du logo */
+        height: 150px; /* Hauteur fixe pour garder les proportions */
+    }
+
+    .search-bar {
+        width: 80%; /* Largeur responsive */
+        margin: 0 auto; /* Centre horizontalement */
+    }
+
+    .sidenav {
+        width: 100%; /* Largeur complète pour les petits écrans */
+        height: auto; /* Hauteur automatique pour les petits écrans */
+        position: relative; /* Changement de position pour éviter le défilement */
+    }
+
+    .contact-section {
+        padding: 30px 10px; /* Réduire l'espace sur les petits écrans */
+    }
+
+}
+img {
+    border-radius: 15px; /* Ajustez la valeur selon vos préférences */
+    width: 100%; /* S'adapte à l'espace du conteneur */
+    height: auto; /* Garde le ratio d'aspect */
+}
+
+@media (max-width: 768px) {
+    .client-satisfaction {
+        flex-direction: column; /* Empile les éléments sur petits écrans */
+        align-items: center;
+    }
+    
+    .satisfaction-item {
+        max-width: 90%; /* Prend presque toute la largeur de l'écran */
+    }
+}
+footer p{
+    color: white;
+}

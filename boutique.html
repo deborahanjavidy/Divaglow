@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divaglow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="boutique.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+    <nav>
+        <div class="topnav">
+            <ul>
+                <li><img src="logo.png" alt="logo-image-fille" id="logo"></li>
+                <li><div class="searchcontainer">
+                    <form action="#" method="get">
+                        <div class="search-container">
+                            <input type="text" class="search-bar" placeholder="Rechercher un produit...">
+                            <button type="submit" class="search-button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                </li>
+                <li><div class="containerdrop">
+                    <div class="user-dropdown" >
+                        <button class="user-button">
+                            <i class="fas fa-user"></i> <!-- Icône utilisateur -->
+                            <i class="fas fa-chevron-down"></i> <!-- Flèche vers le bas -->
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="connect.html">Se connecter</a>
+                            <a href="inscrire.html">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+                </li>
+            </div>
+               <div class="sidenav">
+                    <ul>
+                    <li><a href="accueil.html"><i class="fas fa-home"></i> &nbsp;Accueil</a></li> <!-- Accueil -->
+                    <li><a href="boutique.html"><i class="fas fa-shopping-cart"></i> &nbsp;Boutique</a></li> <!-- Boutique -->
+                    <li><a href="apropos.html"><i class="fas fa-info-circle"></i> &nbsp;À propos</a></li> <!-- Qui sommes-nous -->
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> &nbsp;Contact</a></li> <!-- Contact -->
+                   </ul>
+                </div>
+    </nav>
+    <section class="boutique">
+        <h2>Notre Boutique Beauté - Collection Éclat Pur</h2>
+        <p style=" font-size: larger;
+        text-align: justify;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #666666;
+        text-align: center;">Découvrez nos produits de la collection Éclat Pur, sélectionnés pour révéler l’éclat naturel de votre peau.</p>
+      
+        <!-- Produit 1 -->
+        <div class="product">
+          <div class="product-images">
+            <img src="ser.jpg" alt="Sérum hydratant" class="main-image" style="height: 300px;">
+          </div>
+          <h3>Sérum Hydratant</h3>
+          <p>Prix: 119,000 Ar</p>
+          <p>Ce sérum hydrate intensément la peau, la laissant douce et éclatante.</p>
+          <a href="rupture.html" class="buy-button">
+            <i class="fa fa-shopping-cart"></i> Acheter
+          </a>
+          <button class="fav-button" onclick="toggleFavorite(this)">
+            <i class="fa fa-heart"></i> Ajouter aux Favoris
+        </button>
+        
+          <div class="delivery-info">
+            <p>Livraison rapide et retour gratuit sous 30 jours.</p>
+          </div>
+        </div>
+      
+        <!-- Produit 2 -->
+        <div class="product">
+          <div class="product-images">
+            <img src="mas.jpg" alt="Crème anti-âge" class="main-image" style="height: 300px;">
+          </div>
+          <h3>Masque Nourrissant</h3>
+          <p>Prix: 79,000 Ar</p>
+          <p>Ce masque riche nourrit et régénère les peaux sèches et ternes.</p>
+          <a href="rupture.html" class="buy-button">
+            <i class="fa fa-shopping-cart"></i> Acheter
+          </a>
+          <button class="fav-button" onclick="toggleFavorite(this)">
+            <i class="fa fa-heart"></i> Ajouter aux Favoris
+        </button>
+        
+          <div class="delivery-info">
+            <p>Livraison rapide et retour gratuit sous 30 jours.</p>
+          </div>
+        </div>
+      
+        <!-- Produit 3 -->
+        <div class="product">
+          <div class="product-images">
+            <img src="cra.png" alt="Crème anti-âge" class="main-image" style="height: 300px;">
+          </div>
+          <h3>Crème Anti-Âge</h3>
+          <p>Prix: 159,000 Ar</p>
+          <p>Formulée pour réduire les signes de l'âge et restaurer l'élasticité de la peau.</p>
+          <a href="rupture.html" class="buy-button">
+            <i class="fa fa-shopping-cart"></i> Acheter
+          </a>
+          <button class="fav-button" onclick="toggleFavorite(this)">
+            <i class="fa fa-heart"></i> Ajouter aux Favoris
+        </button>
+        
+          <div class="delivery-info">
+            <p>Livraison rapide et retour gratuit sous 30 jours.</p>
+          </div>
+        </div>
+      
+        <!-- Suggestions de produits similaires -->
+        <div class="related-products">
+          <h3 id="peut-être">Vous aimerez peut-être aussi :</h3>
+          <div class="product-suggestion">
+            <img src="lot.jpg" alt="Lotion tonifiante" style="width: 70%;height: 300px;">
+            <h4>Lotion Tonifiante</h4>
+            <p>Prix: 49,000 Ar</p>
+            <a href="rupture.html" class="buy-button">
+              <i class="fa fa-shopping-cart"></i> Acheter
+            </a>
+          </div>
+          <div class="product-suggestion">
+            <img src="hui.webp" alt="Huile réparatrice" style="width: 70%;height: 300px;">
+            <h4>Huile Réparatrice</h4>
+            <p>Prix: 89,000 Ar</p>
+            <a href="rupture.html" class="buy-button">
+              <i class="fa fa-shopping-cart"></i> Acheter
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Lieu</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Rue Analakely, Tananarive</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> divaglow@email.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Heures d'ouverture</h4>
+                <p><i class="fas fa-clock"></i> Lundi - Vendredi: 9h - 18h</p>
+                <p><i class="fas fa-clock"></i> Samedi: 10h - 16h</p>
+            </div>
+        </div>
+        <div class="social-media">
+            <h4>Suivez-nous</h4>
+            <a href="#"><img src="fb.png" alt="Facebook"></a>
+            <a href="#"><img src="insta.png" alt="Twitter"></a>
+            <a href="#"><img src="x.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="boutique.js"></script>
+</body>
+</html>
